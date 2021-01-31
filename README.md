@@ -10,6 +10,8 @@ Pre-requisites:
 2. Install Node.js 
 3. Install NPM 
 4. Start webdriver setup and installation commands:
+
+
 -- npm init
 -- npm install webdriverio --save-dev
 -- npm install @wdio/cli
@@ -17,6 +19,7 @@ Pre-requisites:
 -- npm install chai --save-dev
 -- npm install chai-webdriverio --save-dev
 -- npm install local-runner --save-dev
+
 
 Tools:
 ===================
