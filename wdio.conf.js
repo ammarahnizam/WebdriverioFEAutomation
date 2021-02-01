@@ -9,6 +9,10 @@ exports.config = {
   // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
   // on a remote machine).
   runner: "local",
+
+  hostname:'localhost',
+  port:4444,
+  path:"/",
   //
   // ==================
   // Specify Test Files
@@ -113,7 +117,7 @@ exports.config = {
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
   services: ["chromedriver"],
-
+  services: ["docker"],
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
   // see also: https://webdriver.io/docs/frameworks.html

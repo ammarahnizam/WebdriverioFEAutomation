@@ -1,0 +1,11 @@
+app:
+  build: .
+  command: npm run test -- --host selenium
+  links:
+    - selenium
+
+selenium:
+  image: selenium/standalone-chrome
+  expose:
+    - "4444"
+  log_driver: "none"
