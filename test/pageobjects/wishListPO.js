@@ -13,9 +13,7 @@ class WishListPage {
   }
 
 
-  get textforEmptyWishList() {
-    return $('p.wishlistNoProducts__text.wishlistNoProducts__text_bold');
-  }
+ 
 
   /**
     * Locators

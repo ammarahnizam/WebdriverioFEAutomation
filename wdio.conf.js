@@ -10,9 +10,10 @@ exports.config = {
   // on a remote machine).
   runner: "local",
 
-  hostname:'localhost',
-  port:4444,
-  path:"/",
+  // hostname: 'localhost',
+  // port: 4444,
+  // path: '/',
+
   //
   // ==================
   // Specify Test Files
@@ -118,6 +119,15 @@ exports.config = {
   // commands. Instead, they hook themselves up into the test process.
   services: ["chromedriver"],
   services: ["docker"],
+  services: ['selenium-standalone'],
+
+  //   services:['chromedriver', {
+  //     logFileName: 'wdio-chromedriver.log', // default
+  //     outputDir: 'driver-logs', // overwrites the config.outputDir
+  //     args: ['--silent']
+  // }]
+
+
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
   // see also: https://webdriver.io/docs/frameworks.html
@@ -162,8 +172,8 @@ exports.config = {
    * @param {Object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  // },
+  onPrepare: function (config, capabilities) {
+  },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
    * for that worker as well as modify runtime environments in an async fashion.

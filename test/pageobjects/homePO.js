@@ -3,11 +3,10 @@ class HomePage {
     return $('[data-testid="search-input"]');
   }
 
-   //--------------------Methods----------------------------
+  //--------------------Methods----------------------------
   openApp() {
     browser.url("/");
-    browser.maximizeWindow();
-    browser.deleteAllCookies();
+
   }
   enterSearchText() {
     this.prodSearchTextBox.setValue("mobel");
