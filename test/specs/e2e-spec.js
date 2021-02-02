@@ -44,18 +44,15 @@ describe("Verify e2e flow -> Search Products -> Add first product to Wishlist ->
 
     });
 
-    it("SHOULD navigate to wishlist page ", function () {
+    it("SHOULD navigate to wishlist page and delete the product", function () {
 
         browser.url('https://www.westwingnow.de/customer/wishlist/index/');
         expect(browser).toHaveUrlContaining("wishlist/index");
-    });
-
-    it("SHOULD delete product from wishlist ", function () {
         browser.pause(tme.shorttm);
         wishListPage.deleteProdfromWishList();
-        expect(wishListPage.textforEmptyWishList).toBeVisible();
-
     });
+
+
 
 
 

@@ -1,0 +1,9 @@
+services:
+   
+    web_driver_io_automation: 
+        build:
+            context: . 
+        volumes:
+            - ./test:/app/test
+        command: yarn test
+
