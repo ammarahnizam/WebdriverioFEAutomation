@@ -26,6 +26,10 @@ Pre-requisites:
 
 -- npm install local-runner --save-dev
 
+For Execution:
+=================
+Run comman: npm run test or ./node_modules/.bin/wdio wdio.conf.js
+
 
 Tools:
 ===================
